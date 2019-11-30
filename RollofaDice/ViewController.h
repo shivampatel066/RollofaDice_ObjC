@@ -10,6 +10,16 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *diceImage;
+@property (weak, nonatomic) IBOutlet UIButton *rollButton;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
+
+- (IBAction)rollAction:(id)sender;
+
+
+
+
 
 @end
 

@@ -16,8 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+
+    
+
+
 }
 
 
+- (IBAction)rollAction:(id)sender {
+    
+    int min = 1;
+    int max = 7;
+    
+    int randomNumber = arc4random_uniform(max-min) + min;
+    self.label.text = [NSString stringWithFormat:@"Rolled a %i",randomNumber];
+    self.diceImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"Dice%i",randomNumber]];
+    
+    
+}
 @end
